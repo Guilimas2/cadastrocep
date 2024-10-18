@@ -17,22 +17,24 @@
                 <label for="Nome" class="form-label">Nome</label>
                 <input type="tel" class="form-control" id="Nome" placeholder="informe seu CEP">
               </div>
+              <div>
+                <label for="">Email:</label><br>
+                <div class="col-md-5">
               <form action="" name = "frmEnvia" onsubmit="return  (verifica())">
-                <h1>Validação de E-mail</h1>
-                <label for="">Email:</label>
+                
                 <input type="text" name="email"  onblur=" chegarEmail()">
-                <input type="submit" value="ENVIAR">
-                <li><a href="cpf.html">Valide seu cpf </a></li>
             </form>
+          </div>
             <div id="email"></div>
               <div class="col-md-3">
                 <label for="Nome" class="form-label">senha</label>
                 <input type="tel" class="form-control" id="senha" placeholder="informe seu CEP">
               </div>
-              <div class="col-md-3">
-                <label for="Nome" class="form-label">cpf</label>
-                <input type="tel" class="form-control" id="cpf" placeholder="informe seu CEP">
-              </div>
+              <form action="" id="cpfform">
+               <label for="">CPF:</label>
+               <input for="text" id="cpf" name="cpf" maxlength="14">
+               <p id="message"></p>
+           </form>
               <div class="col-md-3">
                 <label for="Nome" class="form-label">data de nascimento</label>
                 <input type="tel" class="form-control" id="data de nascimento" placeholder="informe seu CEP">
@@ -67,7 +69,7 @@
                 <input type="text" class="form-control" id="complemento" placeholder="Ex: bloco, apartamento, fundos, sobrado...">
               </div>
               <div class="col-15">
-                <button type="submit" class="btn btn-primary" >𝑬𝑵𝑻𝑹𝑨𝑹</button>
+                <input type="submit" value="ENVIAR">
               </div>
          
           </div>
