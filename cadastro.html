@@ -17,10 +17,14 @@
                 <label for="Nome" class="form-label">Nome</label>
                 <input type="tel" class="form-control" id="Nome" placeholder="informe seu CEP">
               </div>
-              <div class="col-md-3">
-                <label for="Nome" class="form-label">email</label>
-                <input type="tel" class="form-control" id="email" placeholder="informe seu CEP">
-              </div>
+              <form action="" name = "frmEnvia" onsubmit="return  (verifica())">
+                <h1>Validação de E-mail</h1>
+                <label for="">Email:</label>
+                <input type="text" name="email"  onblur=" chegarEmail()">
+                <input type="submit" value="ENVIAR">
+                <li><a href="cpf.html">Valide seu cpf </a></li>
+            </form>
+            <div id="email"></div>
               <div class="col-md-3">
                 <label for="Nome" class="form-label">senha</label>
                 <input type="tel" class="form-control" id="senha" placeholder="informe seu CEP">
@@ -33,7 +37,7 @@
                 <label for="Nome" class="form-label">data de nascimento</label>
                 <input type="tel" class="form-control" id="data de nascimento" placeholder="informe seu CEP">
               </div>
-              <h2></h2>
+              <h3>dados cadastrais</h3>
               <div class="col-md-3">
                 <label for="Nome" class="form-label">CEP</label>
                 <input type="tel" class="form-control" id="cep" placeholder="informe seu CEP">
